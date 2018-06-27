@@ -30,7 +30,12 @@ module.exports = {
 	optimization: {
 		minimizer: [
 			new UglifyJsWebpackPlugin( {
-				sourceMap: true
+				sourceMap: true,
+				uglifyOptions: {
+					output: {
+						comments: /^\**!/
+					}
+				}
 			} ),
 		]
 	},
