@@ -3,7 +3,7 @@
 echo "Building 'build/ckeditor.js'..."
 echo ""
 
-webpack-cli --mode production
+webpack --mode production
 
 echo ""
 echo "Done."
